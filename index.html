@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ERIC X</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:
+linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.9)),
+url("background.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+width:100%;
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+top:0;
+left:0;
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+.logo{
+font-size:42px;
+font-family:'Oswald',sans-serif;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.logo span{
+color:#ff1e1e;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ff1e1e;
+}
+
+/* HERO SECTION */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:120px 8%;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.small-text{
+color:#ff1e1e;
+font-size:18px;
+letter-spacing:5px;
+margin-bottom:20px;
+font-family:'Oswald',sans-serif;
+}
+
+.hero h1{
+font-size:110px;
+line-height:0.9;
+font-family:'Oswald',sans-serif;
+margin-bottom:25px;
+}
+
+.hero h1 span{
+color:#ff1e1e;
+}
+
+.hero p{
+font-size:21px;
+line-height:1.8;
+color:#d0d0d0;
+margin-bottom:35px;
+}
+
+/* BUTTONS */
+
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 34px;
+border:2px solid #ff1e1e;
+border-radius:12px;
+text-decoration:none;
+color:white;
+font-weight:700;
+transition:0.3s;
+background:rgba(0,0,0,0.4);
+display:inline-block;
+}
+
+.btn:hover{
+background:#ff1e1e;
+transform:translateY(-4px);
+box-shadow:0 0 20px rgba(255,30,30,0.4);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+font-size:60px;
+font-family:'Oswald',sans-serif;
+margin-bottom:45px;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(10,10,10,0.78);
+padding:40px 30px;
+border-radius:20px;
+border:1px solid rgba(255,30,30,0.25);
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#ff1e1e;
+box-shadow:0 0 30px rgba(255,30,30,0.25);
+}
+
+.card h2{
+font-size:34px;
+margin-bottom:18px;
+font-family:'Oswald',sans-serif;
+}
+
+.card p{
+color:#cfcfcf;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+/* CONTACT BOX */
+
+.contact-box{
+background:rgba(0,0,0,0.78);
+border:2px solid rgba(255,30,30,0.3);
+padding:60px;
+border-radius:25px;
+backdrop-filter:blur(10px);
+text-align:center;
+}
+
+.contact-box h1{
+font-size:75px;
+font-family:'Oswald',sans-serif;
+margin-bottom:25px;
+}
+
+.contact-box h1 span{
+color:#ff1e1e;
+}
+
+.contact-box p{
+font-size:20px;
+line-height:2;
+color:#d4d4d4;
+margin-bottom:35px;
+}
+
+/* FOOTER */
+
+footer{
+padding:35px;
+text-align:center;
+color:#999;
+font-size:15px;
+border-top:1px solid rgba(255,255,255,0.08);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:72px;
+}
+
+.section-title{
+font-size:42px;
+}
+
+.contact-box h1{
+font-size:50px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        ERIC <span>X</span>
+    </div>
+
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#music">MUSIC</a></li>
+        <li><a href="#beats">BEATS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+
+</nav>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="small-text">
+            MUSIC • VIBES • ENERGY
+        </div>
+
+        <h1>
+            ERIC <span>X</span>
+        </h1>
+
+        <p>
+            Independent artist and beat producer creating dark melodic vibes, emotional sounds, and powerful music experiences.
+        </p>
+
+        <div class="buttons">
+
+            <a class="btn" href="https://www.youtube.com/channel/UCP4wIxS2VJVuXhQKEmjGOkg" target="_blank">
+                YouTube
+            </a>
+
+            <a class="btn" href="https://www.instagram.com/ericxantony?utm_source=qr&igsh=bjkxMzBtbmtxb2pj" target="_blank">
+                Instagram
+            </a>
+
+            <a class="btn" href="https://www.bandlab.com/eric_antony" target="_blank">
+                BandLab
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MUSIC -->
+
+<section id="music">
+
+    <h1 class="section-title">
+        LATEST MUSIC
+    </h1>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2>Latest Release</h2>
+
+            <p>
+                Check out my newest music release on YouTube.
+            </p>
+
+            <a class="btn" href="https://www.youtube.com/channel/UCP4wIxS2VJVuXhQKEmjGOkg/videos" target="_blank">
+                WATCH NOW
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Music Channel</h2>
+
+            <p>
+                Explore all uploads, latest tracks, edits, and future releases.
+            </p>
+
+            <a class="btn" href="https://www.youtube.com/channel/UCP4wIxS2VJVuXhQKEmjGOkg" target="_blank">
+                OPEN CHANNEL
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Newest Uploads</h2>
+
+            <p>
+                Stay updated with every new release from ERIC X.
+            </p>
+
+            <a class="btn" href="https://www.youtube.com/channel/UCP4wIxS2VJVuXhQKEmjGOkg/videos" target="_blank">
+                VIEW VIDEOS
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BEATS -->
+
+<section id="beats">
+
+    <div class="contact-box">
+
+        <h1>
+            MAKE YOUR <span>DREAM BEAT</span>
+        </h1>
+
+        <p>
+            DM me now on BandLab so I can make your dream beat!
+        </p>
+
+        <a class="btn" href="https://www.bandlab.com/eric_antony" target="_blank">
+            DM ME NOW
+        </a>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="contact-box">
+
+        <h1>
+            CONTACT <span>ME</span>
+        </h1>
+
+        <p>
+
+            Instagram:
+            <br>
+            https://www.instagram.com/ericxantony
+            <br><br>
+
+            YouTube:
+            <br>
+            https://www.youtube.com/channel/UCP4wIxS2VJVuXhQKEmjGOkg
+            <br><br>
+
+            BandLab:
+            <br>
+            https://www.bandlab.com/eric_antony
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    © Copyright by ERIC X
+</footer>
+
+</body>
+</html>
